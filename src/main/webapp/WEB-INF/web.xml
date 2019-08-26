@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Contador</servlet-name>
+        <servlet-class>br.cesjf.wagner.serlet.Contador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>textconvert</servlet-name>
+        <servlet-class>br.cesjf.wagner.serlet.textconvert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Validador</servlet-name>
+        <servlet-class>br.cesjf.wagner.serlet.Validador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CicloDeVida</servlet-name>
+        <servlet-class>br.cesjf.wagner.serlet.CicloDeVida</servlet-class>
+        <init-param>
+            <param-name>nome</param-name>
+            <param-value>wagner</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Contador</servlet-name>
+        <url-pattern>/contador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>textconvert</servlet-name>
+        <url-pattern>/textconvert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Validador</servlet-name>
+        <url-pattern>/validador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CicloDeVida</servlet-name>
+        <url-pattern>/cicloVida</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
