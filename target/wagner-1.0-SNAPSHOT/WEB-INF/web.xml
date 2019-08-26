@@ -20,6 +20,10 @@
             <param-value>wagner</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>Todo_dinamico</servlet-name>
+        <servlet-class>br.cesjf.wagner.serlet.Todo_dinamico</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Contador</servlet-name>
         <url-pattern>/contador</url-pattern>
@@ -35,6 +39,10 @@
     <servlet-mapping>
         <servlet-name>CicloDeVida</servlet-name>
         <url-pattern>/cicloVida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Todo_dinamico</servlet-name>
+        <url-pattern>/todo_dinamico</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
