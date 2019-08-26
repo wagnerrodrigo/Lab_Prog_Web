@@ -21,7 +21,7 @@ import java.util.List;
  */
 public class Todo_dinamico extends HttpServlet {
     ArrayList<Tarefa> list = new ArrayList<Tarefa>();
-
+    
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -33,6 +33,8 @@ public class Todo_dinamico extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        new Tarefa(true, "adsf");
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
@@ -42,7 +44,7 @@ public class Todo_dinamico extends HttpServlet {
             out.println("<title>Servlet Todo_dinamico</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Todo_dinamico at " + "<h1>"+ list +"</h1" + "</h1>");
+            out.println("<h1>Servlet Todo_dinamico at " + "<h1>"+ list.add(new Tarefa(true, "asasdf "))+"</h1" + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
